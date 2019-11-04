@@ -1,0 +1,1 @@
+import mathimport pandasdef calculator(excel_path, price_index):    # 輸入excel的位置    df = pandas.read_excel(excel_path)        # 抓取excel裡面的五個數值（index 0,1,2,3,4)    x = float(df["Price"][price_index])        # 讓使用者自己輸入數值，並轉為float    y = float(input("Enter the value of y: "))        # 結果顯示次方    result = round(math.pow(x / y, 2))        # 回傳結果    return result
